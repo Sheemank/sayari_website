@@ -7,10 +7,10 @@ name :
 
 /shayari-website/
 │
-├── index.html                  # Home page
-├── about.html                  # About the website or creator
+├── index.html                  # Home page<br>
+├── about.html                  # About the website or creator<br>
 ├── contact.html    
-|-- login.html
+|-- login.html<br>
 |--sign-up.html            # Contact form or social links
 │
 ├── /assets/
