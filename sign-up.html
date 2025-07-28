@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up with Profile Image</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            animation: fadeIn 0.8s ease-out;
+            padding: 40px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .header h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            border-radius: 2px;
+        }
+
+        .image-upload-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .image-preview {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #e0e0e0;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .image-preview:hover {
+            transform: scale(1.05);
+            border-color: #6a11cb;
+        }
+
+        .image-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none;
+        }
+
+        .upload-icon {
+            font-size: 50px;
+            color: #6a11cb;
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+
+        .image-preview:hover .upload-icon {
+            opacity: 1;
+            transform: translateY(-5px);
+        }
+
+        .upload-text {
+            margin-top: 15px;
+            color: #555;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .upload-text span {
+            color: #6a11cb;
+            font-weight: 600;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        #image-upload {
+            display: none;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .name-group {
+            display: flex;
+            gap: 20px;
+        }
+
+        .name-group .input-group {
+            flex: 1;
+        }
+
+        .input-group {
+            position: relative;
+        }
+
+        .input-group i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6a11cb;
+            font-size: 18px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 16px 16px 16px 50px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .input-group input:focus {
+            border-color: #6a11cb;
+            box-shadow: 0 0 0 4px rgba(106, 17, 203, 0.2);
+            outline: none;
+        }
+
+        .input-group input:focus + i {
+            color: #2575fc;
+        }
+
+        .password-container {
+            position: relative;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #777;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: color 0.3s;
+        }
+
+        .toggle-password:hover {
+            color: #6a11cb;
+        }
+
+        .input-group .password-input {
+            padding-right: 50px;
+        }
+
+        .terms {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 10px 0 5px;
+        }
+
+        .terms input {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            accent-color: #6a11cb;
+        }
+
+        .terms label {
+            font-size: 15px;
+            color: #555;
+        }
+
+        .terms a {
+            color: #6a11cb;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .terms a:hover {
+            text-decoration: underline;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            border: none;
+            padding: 18px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            margin-top: 15px;
+            box-shadow: 0 7px 20px rgba(106, 17, 203, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transition: 0.6s;
+        }
+
+        .submit-btn:hover::before {
+            left: 100%;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(106, 17, 203, 0.6);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 25px;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .login-link a {
+            color: #6a11cb;
+            text-decoration: none;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .login-link a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #6a11cb;
+            transition: width 0.3s;
+        }
+
+        .login-link a:hover::after {
+            width: 100%;
+        }
+
+        .password-strength {
+            margin-top: 8px;
+            height: 6px;
+            border-radius: 3px;
+            background: #e0e0e0;
+            overflow: hidden;
+        }
+
+        .strength-meter {
+            height: 100%;
+            width: 0;
+            background: #e74c3c;
+            transition: width 0.3s, background 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.95);
+                opacity: 0.7;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0.95);
+                opacity: 0.7;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+            
+            .name-group {
+                flex-direction: column;
+                gap: 25px;
+            }
+            
+            .header h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 25px 20px;
+            }
+            
+            .header h1 {
+                font-size: 1.9rem;
+            }
+            
+            .image-preview {
+                width: 130px;
+                height: 130px;
+            }
+            
+            .submit-btn {
+                padding: 16px;
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Create Your Account</h1>
+        </div>
+        
+        <div class="image-upload-container">
+            <div class="image-preview" id="image-preview">
+                <i class="fas fa-camera upload-icon"></i>
+                <img id="preview-img" src="" alt="Profile Preview">
+            </div>
+            <div class="upload-text">
+                Upload your profile photo <span id="upload-trigger">click here</span>
+            </div>
+            <input type="file" id="image-upload" accept="image/*">
+        </div>
+        
+        <div class="form-container">
+            <div class="name-group">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="First Name" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Password" class="password-input" required>
+                    <span class="toggle-password" onclick="togglePassword('password', this)">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                </div>
+                <div class="password-strength">
+                    <div class="strength-meter" id="password-strength"></div>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <div class="password-container">
+                    <input type="password" id="confirm-password" placeholder="Confirm Password" class="password-input" required>
+                    <span class="toggle-password" onclick="togglePassword('confirm-password', this)">
+                        <i class="fas fa-eye"></i>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="terms">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+            </div>
+            
+            <button class="submit-btn">Create Account</button>
+        </div>
+        
+        <div class="login-link">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Image upload functionality
+        const imageUpload = document.getElementById('image-upload');
+        const imagePreview = document.getElementById('image-preview');
+        const previewImg = document.getElementById('preview-img');
+        const uploadTrigger = document.getElementById('upload-trigger');
+        
+        imagePreview.addEventListener('click', () => {
+            imageUpload.click();
+        });
+        
+        uploadTrigger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            imageUpload.click();
+        });
+        
+        imageUpload.addEventListener('change', function() {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    previewImg.src = e.target.result;
+                    previewImg.style.display = 'block';
+                    imagePreview.querySelector('.upload-icon').style.display = 'none';
+                    
+                    // Add pulsing animation temporarily
+                    imagePreview.style.animation = 'pulse 0.8s ease';
+                    setTimeout(() => {
+                        imagePreview.style.animation = '';
+                    }, 800);
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+        
+        // Password visibility toggle
+        function togglePassword(fieldId, element) {
+            const passwordField = document.getElementById(fieldId);
+            const icon = element.querySelector('i');
+            
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            } else {
+                passwordField.type = "password";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            }
+        }
+        
+        // Password strength indicator
+        document.getElementById('password').addEventListener('input', function(e) {
+            const password = e.target.value;
+            const strengthBar = document.getElementById('password-strength');
+            let strength = 0;
+            
+            if (password.length > 5) strength += 25;
+            if (password.length > 8) strength += 25;
+            
+            if (/[A-Z]/.test(password)) strength += 15;
+            if (/[0-9]/.test(password)) strength += 15;
+            if (/[^A-Za-z0-9]/.test(password)) strength += 20;
+            
+            strengthBar.style.width = strength + '%';
+            
+            if (strength < 50) {
+                strengthBar.style.background = '#e74c3c';
+            } else if (strength < 80) {
+                strengthBar.style.background = '#f39c12';
+            } else {
+                strengthBar.style.background = '#2ecc71';
+            }
+        });
+        
+        // Form validation on submit
+        document.querySelector('.submit-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            const terms = document.getElementById('terms').checked;
+            
+            if (!terms) {
+                alert('Please agree to the Terms of Service and Privacy Policy');
+                return;
+            }
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+            
+            if (password.length < 6) {
+                alert('Password must be at least 6 characters long!');
+                return;
+            }
+            
+            alert('Account created successfully!');
+            document.querySelector('.form-container').reset();
+        });
+    </script>
+</body>
+</html>
