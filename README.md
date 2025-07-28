@@ -1,12 +1,12 @@
 developed by Sheemank Rajvanshi and My Friend Nikhil Kashauthan .....<br>
-# sayari_website
-upload sayari and songs and images
-
-name :  
-     : LikhaHuaDil
-     :HeartInk
-
-/shayari-website/
+# sayari_website<br>
+upload sayari and songs and images<br>
+****
+name :  <br>
+     : LikhaHuaDil<br>
+     :HeartInk<br>
+     <br>
+/shayari-website/<br>
 │
 ├── index.html                  # Home page<br>
 ├── about.html                  # About the website or creator<br>
