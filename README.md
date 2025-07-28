@@ -1,3 +1,4 @@
+developed by Sheemank Rajvanshi and My Friend Nikhil Kashauthan .....<br>
 # sayari_website
 upload sayari and songs and images
 
@@ -21,21 +22,21 @@ name :
 │   └── /icons/                 # Social or UI icons<br>
 │<br>
 ├── /css/<br>
-│   ├── style.css               # Main stylesheet
-│   └── responsive.css          # Responsive styles (optional)
-│
-├── /js/
-│   └── main.js                 # JavaScript for interactivity (slider, effects, etc.)
-│
-├── /shayari/
-│   ├── love.html
-│   ├── sad.html
-│   └── motivation.html         # Separate pages for different shayari types
-│
-├── /thoughts/
-│   └── innovative.html         # Innovative thinking or creativity blog
-│
-├── /templates/ (optional)
-│   └── layout.html             # If using templating engine like EJS, Jinja, etc.
-│
-└── README.md                   # Optional: Project description
+│   ├── style.css               # Main stylesheet<br>
+│   └── responsive.css          # Responsive styles (optional)<br>
+│<br>
+├── /js/<br>
+│   └── main.js                 # JavaScript for interactivity (slider, effects, etc.)<br>
+│<br>
+├── /shayari/<br>
+│   ├── love.html<br>
+│   ├── sad.html<br>
+│   └── motivation.html         # Separate pages for different shayari types<br>
+│<br>
+├── /thoughts/<br>
+│   └── innovative.html         # Innovative thinking or creativity blog<br>
+│<br>
+├── /templates/ (optional)<br>
+│   └── layout.html             # If using templating engine like EJS, Jinja, etc.<br>
+│<br>
+└── README.md                   # Optional: Project description<br>
