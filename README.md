@@ -9,18 +9,18 @@ name :
 │
 ├── index.html                  # Home page<br>
 ├── about.html                  # About the website or creator<br>
-├── contact.html    
+├── contact.html<br>    
 |-- login.html<br>
-|--sign-up.html            # Contact form or social links
+|--sign-up.html            # Contact form or social links<br>
 │
-├── /assets/
-│   ├── /images/                # All text-based images, background images
-│   ├── /songs/                 # Audio files or lyric images
-│   ├── /videos/                # If any background or poem videos
-│   ├── /fonts/                 # Custom fonts if used
-│   └── /icons/                 # Social or UI icons
-│
-├── /css/
+├── /assets/<br>
+│   ├── /images/                # All text-based images, background images<br>
+│   ├── /songs/                 # Audio files or lyric images<br>
+│   ├── /videos/                # If any background or poem videos<br>
+│   ├── /fonts/                 # Custom fonts if used<br>
+│   └── /icons/                 # Social or UI icons<br>
+│<br>
+├── /css/<br>
 │   ├── style.css               # Main stylesheet
 │   └── responsive.css          # Responsive styles (optional)
 │
