@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const shayariImages = [
                 {
                     id: 1,
-                    title: "motivation student",
+                    title: "motivation",
                     imageUrl: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=500&q=80",
                     tags: ["motivation", "student", "heart", "study"],
                     description: "A beautiful expression of romantic love",
