@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     id: 1,
                     title: "motivation student",
                     imageUrl: '../assets/images/motivation_1.jpg',
-                    tags: ["love", "romantic", "heart", "passion"],
+                    tags: ["motivation", "student", "heart", "study"],
                     description: "A beautiful expression of romantic love",
                     category: "motivation"               },
                 {
