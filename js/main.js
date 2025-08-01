@@ -35,8 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const shayariImages = [
                 {
                     id: 1,
-                    title: "Romantic Love",
-                    imageUrl: "https://images.unsplash.com/photo-1523902476193-2f529b3dba23?auto=format&fit=crop&w=500&q=80",
+                    title: "motivation student",
+                    imageUrl: motivation_1.jpg,
                     tags: ["love", "romantic", "heart", "passion"],
                     description: "A beautiful expression of romantic love",
                     category: "love"
