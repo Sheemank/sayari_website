@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 {
                     id: 1,
                     title: "motivation student",
-                    imageUrl: 'https://plus.unsplash.com/premium_photo-1753211477530-ac7d65a3119f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8',
+                    imageUrl: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=500&q=80",
                     tags: ["motivation", "student", "heart", "study"],
                     description: "A beautiful expression of romantic love",
                     category: "motivation"               },
