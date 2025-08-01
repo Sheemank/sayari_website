@@ -36,11 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 {
                     id: 1,
                     title: "motivation student",
-                    imageUrl: '../assets/images/1.jpg',
+                    imageUrl: '../assets/images/motivation_1.jpg',
                     tags: ["love", "romantic", "heart", "passion"],
                     description: "A beautiful expression of romantic love",
-                    category: "love"
-                },
+                    category: "motivation"               },
                 {
                     id: 2,
                     title: "Heartbreak",
