@@ -69,124 +69,122 @@ const shayariImages = [
   {
     id: 5,
     title: "sad love",
-    imageUrl:"assets/images/sad-2.png",
-    tags: ["sad", "lonely", "alone", "empty","love"],
-    description: "ab jaane tum to nahin, shikava-e-gam kisase kahate hainya chup raho ya ro padhen",
+    imageUrl: "assets/images/sad-2.png",
+    tags: ["sad", "lonely", "alone", "empty", "love"],
+    description:
+      "ab jaane tum to nahin, shikava-e-gam kisase kahate hainya chup raho ya ro padhen",
     category: "sad",
   },
   {
     id: 6,
     title: "sad love",
-    imageUrl:"assets/images/sad-3.png",
+    imageUrl: "assets/images/sad-3.png",
     tags: ["sad", "heart break", "chuta dil", "pain"],
-    description: "jo dil ke kareeb the vo jabase dushman ho gaye baazaar mein hue charch",
+    description:
+      "jo dil ke kareeb the vo jabase dushman ho gaye baazaar mein hue charch",
     category: "heart break",
   },
   {
     id: 7,
     title: "First Love return",
-    imageUrl:"assets/images/love-2.png",
+    imageUrl: "assets/images/love-2.png",
     tags: ["love", "first love", "old love", "pain love"],
-    description: "sirf ek saafa palatakar vah, baste kee duhaee dee hai. phir bhee vaapas jaana hoga",
+    description:
+      "sirf ek saafa palatakar vah, baste kee duhaee dee hai. phir bhee vaapas jaana hoga",
     category: "love",
   },
   {
     id: 8,
-    title: "Lost Love",
-    imageUrl:
-      "https://images.unsplash.com/photo-1534349762237-72023b3558c7?auto=format&fit=crop&w=500&q=80",
-    tags: ["sad", "lost", "regret", "memory"],
-    description: "Remembering a love that was lost",
-    category: "sad",
-  },
-  {
-    id: 9,
-    title: "Perseverance",
-    imageUrl:
-      "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=500&q=80",
-    tags: ["motivation", "perseverance", "strength", "resilience"],
-    description: "Keep going no matter what",
+    title: "motivation",
+    imageUrl: "assets/images/motivation-2.png",
+    tags: ["motivation", "attitude", "positive", "student"],
+    description:
+      "mere baare mein koee raay mat banao gaalib, mera vaqt badalega aur tumhaaree raay bhee",
     category: "motivation",
   },
   {
+    id: 9,
+    title: "sad",
+    imageUrl: "assets/images/sad-4.png",
+    tags: ["sad", "heartbreak", "self respect", "pain", "sad love"],
+    description:
+      "tumakar laut aao dukh kee baat maan mat karana, ham ek baar kee mohobbat hain mahila nahin karo!",
+    category: "sad",
+  },
+  {
     id: 10,
-    title: "Eternal Love",
-    imageUrl:
-      "https://images.unsplash.com/photo-1597157635483-573a8f1b2d86?auto=format&fit=crop&w=500&q=80",
-    tags: ["love", "eternal", "forever", "commitment"],
-    description: "Love that transcends time",
+    title: "motivation",
+    imageUrl: "assets/images/motivation-3.png",
+    tags: ["motivation", "student", "zindagi shayari", "commitment"],
+    description:
+      "koee chaaraagaah jalaata nahin saalike se magar sabhee kee yaachika hava se hota hai",
     category: "love",
   },
   {
     id: 11,
-    title: "Sorrow",
-    imageUrl:
-      "https://images.unsplash.com/photo-1530099486328-e021101a494a?auto=format&fit=crop&w=500&q=80",
-    tags: ["sad", "sorrow", "pain", "grief"],
-    description: "Deep sorrow that words can't express",
-    category: "sad",
+    title: "motivation",
+    imageUrl: "assets/images/motivation-4.png",
+    tags: ["motivation", "josh", "student", "belive", "ziddi"],
+    description:
+      "mil sake jo aasaanee se usakee khvaahish kise hai jid to usaka hai jo muqaddar mein likha hee nahin hai",
+    category: "motivation",
   },
   {
     id: 12,
-    title: "Achievement",
-    imageUrl:
-      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=500&q=80",
-    tags: ["motivation", "achievement", "success", "victory"],
-    description: "Celebrating hard-earned success",
-    category: "motivation",
-  },
-  {
-    id: 13,
-    title: "Passionate Love",
-    imageUrl:
-      "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=500&q=80",
-    tags: ["love", "passion", "desire", "intense"],
-    description: "The fire of passionate love",
+    title: "love",
+    imageUrl: "assets/images/love-3.png",
+    tags: ["love", "success", "victory"],
+    description:
+      "paravaane ko shama par jalakar kuchh to hoga yoon hee mrtyu ke lie koee muhabbat nahin karata",
     category: "love",
   },
   {
+    id: 13,
+    title: "Attitude",
+    imageUrl: "assets/images/attitude-1.png",
+    tags: ["attitude", "passion", "circle", "power"],
+    description:
+      "dushman bhee mere mureed hain shaayad, vakt-bevakt mera naam liya gaya hai. meree galee se kahaaniyaan chhupe ke khanjar hain roo-ba-roo hone par salaam karate hain",
+    category: "power",
+  },
+  {
     id: 14,
-    title: "Heartache",
-    imageUrl:
-      "https://images.unsplash.com/photo-1516246843872-f67971438914?auto=format&fit=crop&w=500&q=80",
-    tags: ["sad", "heartache", "pain", "suffering"],
-    description: "The ache of a wounded heart",
-    category: "sad",
+    title: "love",
+    imageUrl: "assets/images/love-4.png",
+    tags: ["sad", "love", "girls", "suffering", "boy poin"],
+    description:"ya khuda ret ke sehara ko samandar kar de ya chhalakatee huee nazar ko bhee patthar kar de",
+    category: "love",
   },
   {
     id: 15,
-    title: "Overcoming Fear",
-    imageUrl:
-      "https://images.unsplash.com/photo-1574015945229-9f7984a8a5f2?auto=format&fit=crop&w=500&q=80",
-    tags: ["motivation", "fear", "courage", "bravery"],
-    description: "Conquering your fears to succeed",
-    category: "motivation",
+    title: "love",
+    imageUrl:"assets/images/sad-5.png",
+    tags: ["love", "boyspain", "brackup",],
+    description: "mujhe dekhen itana kyon hota hai hairaan ai dost kuchh nahin hua hai bas bharosa karake dhokha khaana hai!",
+    category: "boy poin",
   },
   {
     id: 16,
-    title: "Inner Peace",
-    imageUrl:
-      "https://images.unsplash.com/photo-1506126613408-eca07568e728?auto=format&fit=crop&w=500&q=80",
-    tags: ["peace", "calm", "serenity", "mindfulness"],
-    description: "Finding tranquility within yourself",
-    category: "wellness",
+    title: "motivation",
+    imageUrl:"assets/images/motivation-5.png",
+    tags: ["motivation", "belive", "hidden pain", "mindfulness"],
+    description: "shiksha bhee shaamil hai to kisase parichay ye apana hee muqaddar hai apane hee roodhiyaan hain.",
+    category: "self improvement",
   },
   {
     id: 17,
-    title: "Unbreakable Bond",
-    imageUrl:
-      "https://images.unsplash.com/photo-1581888224145-d667809a4735?auto=format&fit=crop&w=500&q=80",
-    tags: ["friendship", "bond", "trust", "support"],
-    description: "The strength of a true friendship",
+    title: "sad",
+    imageUrl:"assets/images/sad-6.png",
+    tags: ["emotion", "bond", "trust", "support"],
+    description: "hamen bhee neend aaegee ham bhee so hee jaenge abhee kuchh bekaraaree hai sitaare tum to to jao",
     category: "love",
   },
   {
     id: 18,
-    title: "Lonely Road",
-    imageUrl:
-      "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=500&q=80",
-    tags: ["loneliness", "solitude", "sad", "journey"],
-    description: "Walking a path of solitude",
+    title: "love ",
+    imageUrl:"assets/images/love-5.png",
+    tags: ["single person", "pain", "sad", "one sided love"],
+    description: "na kar too itanee koshishen mere dard ko sanket kee pahale ishk kar phir chot kha phir dava likho mere dard kee",
     category: "sad",
   },
   {
@@ -207,186 +205,7 @@ const shayariImages = [
     description: "The breathtaking beauty of the peaks",
     category: "nature",
   },
-  {
-    id: 21,
-    title: "Urban Jungle",
-    imageUrl:
-      "https://images.unsplash.com/photo-1531932375833-ff942a382c2a?auto=format&fit=crop&w=500&q=80",
-    tags: ["city", "urban", "hustle", "modern"],
-    description: "The vibrant energy of city life",
-    category: "travel",
-  },
-  {
-    id: 22,
-    title: "Quiet Contemplation",
-    imageUrl:
-      "https://images.unsplash.com/photo-1489648022186-8f49310909a0?auto=format&fit=crop&w=500&q=80",
-    tags: ["thoughtful", "reflection", "solitude", "mindfulness"],
-    description: "A moment of deep reflection",
-    category: "wellness",
-  },
-  {
-    id: 23,
-    title: "Endless Summer",
-    imageUrl:
-      "https://images.unsplash.com/photo-1507525428034-b723a9ce6ad3?auto=format&fit=crop&w=500&q=80",
-    tags: ["summer", "beach", "vacation", "relax"],
-    description: "Chasing the sun and the waves",
-    category: "travel",
-  },
-  {
-    id: 24,
-    title: "Lost in Thought",
-    imageUrl:
-      "https://images.unsplash.com/photo-1562620669-980011370217?auto=format&fit=crop&w=500&q=80",
-    tags: ["sad", "lost", "melancholy", "thinking"],
-    description: "Wandering in a maze of thoughts",
-    category: "sad",
-  },
-  {
-    id: 25,
-    title: "Victorious Spirit",
-    imageUrl:
-      "https://images.unsplash.com/photo-1521464302861-ce9449538553?auto=format&fit=crop&w=500&q=80",
-    tags: ["success", "victory", "achievement", "motivation"],
-    description: "The feeling of ultimate triumph",
-    category: "motivation",
-  },
-  {
-    id: 26,
-    title: "Gentle Affection",
-    imageUrl:
-      "https://images.unsplash.com/photo-1564415428619-35399b19e485?auto=format&fit=crop&w=500&q=80",
-    tags: ["love", "affection", "tenderness", "care"],
-    description: "A soft touch, a gentle love",
-    category: "love",
-  },
-  {
-    id: 27,
-    title: "The Silent Forest",
-    imageUrl:
-      "https://images.unsplash.com/photo-1489564242025-7de2a804043b?auto=format&fit=crop&w=500&q=80",
-    tags: ["nature", "forest", "peace", "solitude"],
-    description: "Whispers among the ancient trees",
-    category: "nature",
-  },
-  {
-    id: 28,
-    title: "Unwavering Focus",
-    imageUrl:
-      "https://images.unsplash.com/photo-1580541634351-c19b6a091567?auto=format&fit=crop&w=500&q=80",
-    tags: ["focus", "determination", "goals", "motivation"],
-    description: "Eyes on the prize, mind on the goal",
-    category: "motivation",
-  },
-  {
-    id: 29,
-    title: "A Glimmer of Hope",
-    imageUrl:
-      "https://images.unsplash.com/photo-1532187643623-dbf26b5894b1?auto=format&fit=crop&w=500&q=80",
-    tags: ["hope", "light", "faith", "optimism"],
-    description: "Finding light in the darkness",
-    category: "motivation",
-  },
-  {
-    id: 30,
-    title: "Bittersweet Memories",
-    imageUrl:
-      "https://images.unsplash.com/photo-1483366774565-c783b9f74e1a?auto=format&fit=crop&w=500&q=80",
-    tags: ["memories", "nostalgia", "bittersweet", "past"],
-    description: "Smiling at the past with a tear",
-    category: "sad",
-  },
-  {
-    id: 31,
-    title: "Journey of Discovery",
-    imageUrl:
-      "https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=500&q=80",
-    tags: ["travel", "adventure", "discovery", "explore"],
-    description: "Exploring new worlds and yourself",
-    category: "travel",
-  },
-  {
-    id: 32,
-    title: "Pure Joy",
-    imageUrl:
-      "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&w=500&q=80",
-    tags: ["joy", "happiness", "laughter", "bliss"],
-    description: "The simple, pure bliss of being happy",
-    category: "love",
-  },
-  {
-    id: 33,
-    title: "The Weight of the World",
-    imageUrl:
-      "https://images.unsplash.com/photo-1518307038392-41778b0569ee?auto=format&fit=crop&w=500&q=80",
-    tags: ["stress", "burden", "sad", "overwhelmed"],
-    description: "Feeling the heavy weight of worries",
-    category: "sad",
-  },
-  {
-    id: 34,
-    title: "Unstoppable Drive",
-    imageUrl:
-      "https://images.unsplash.com/photo-1530021232336-92769455883a?auto=format&fit=crop&w=500&q=80",
-    tags: ["drive", "ambition", "motivation", "hustle"],
-    description: "An unyielding will to succeed",
-    category: "motivation",
-  },
-  {
-    id: 35,
-    title: "Serene Waters",
-    imageUrl:
-      "https://images.unsplash.com/photo-1439405326854-014607f694d7?auto=format&fit=crop&w=500&q=80",
-    tags: ["nature", "serene", "water", "calm"],
-    description: "The peaceful stillness of the water",
-    category: "nature",
-  },
-  {
-    id: 36,
-    title: "A Shared Secret",
-    imageUrl:
-      "https://images.unsplash.com/photo-1530972235672-17add5360350?auto=format&fit=crop&w=500&q=80",
-    tags: ["love", "friendship", "secret", "intimacy"],
-    description: "A moment shared between two souls",
-    category: "love",
-  },
-  {
-    id: 37,
-    title: "The Climb to the Top",
-    imageUrl:
-      "https://images.unsplash.com/photo-1542382257-80ded14b2d11?auto=format&fit=crop&w=500&q=80",
-    tags: ["ambition", "challenge", "success", "motivation"],
-    description: "The arduous journey to reach the peak",
-    category: "motivation",
-  },
-  {
-    id: 38,
-    title: "Fading Light",
-    imageUrl:
-      "https://images.unsplash.com/photo-1502947285625-22e34988a666?auto=format&fit=crop&w=500&q=80",
-    tags: ["sad", "ending", "farewell", "melancholy"],
-    description: "As the day and hope fade away",
-    category: "sad",
-  },
-  {
-    id: 39,
-    title: "Wild Spirit",
-    imageUrl:
-      "https://images.unsplash.com/photo-1551893909-144a9b993976?auto=format&fit=crop&w=500&q=80",
-    tags: ["freedom", "wild", "spirit", "nature"],
-    description: "An untamed and free spirit",
-    category: "motivation",
-  },
-  {
-    id: 40,
-    title: "Cozy Comfort",
-    imageUrl:
-      "https://images.unsplash.com/photo-1528825867112-c2153545de5f?auto=format&fit=crop&w=500&q=80",
-    tags: ["comfort", "cozy", "relax", "home"],
-    description: "Finding comfort in the little things",
-    category: "wellness",
-  },
+  
 ];
 
 // DOM Elements
@@ -493,4 +312,3 @@ searchForm.addEventListener("submit", function (e) {
 
 // Initialize gallery with all images
 renderImages(shayariImages);
-
