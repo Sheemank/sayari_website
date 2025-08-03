@@ -1,4 +1,4 @@
-/*
+
 document.addEventListener('DOMContentLoaded', () => {
     const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
     const siteHeader = document.querySelector('.site-header');
@@ -26,7 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 typeWriter();
 
-*/
+
+
+
+
+                
 
 // Shayari image data stored as objects
 const shayariImages = [
@@ -240,7 +244,7 @@ function createImageBox(image) {
         </div>
         <div class="image-info">
          <h3>${image.title}</h3>
-          
+          <p>${image.description}</p>
           <div class="tags-container">
             ${image.tags
               .map((tag) => `<span class="tag">${tag}</span>`)
