@@ -481,6 +481,15 @@
             .search button {
                 padding: 0 20px;
             }
+            /* this is not visible in 480px devices */
+            .featured-categories{
+                display: none;
+            }
+            
+            .hero-section p{
+                display: none;
+            }
+            
         }
 
         /* Image Gallery Styles */
@@ -713,3 +722,57 @@
         .tags-container {
             margin-top: 10px;
         }
+/* animated text h1*/
+.animated-title {
+        font-size: 3rem;
+        font-weight: bold;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .glow-text span {
+        display: inline-block;
+        animation: glow 1.5s ease-in-out infinite alternate;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    /* Wave delay for each letter */
+    .glow-text span:nth-child(1) { animation-delay: 0s; }
+    .glow-text span:nth-child(2) { animation-delay: 0.1s; }
+    .glow-text span:nth-child(3) { animation-delay: 0.2s; }
+    .glow-text span:nth-child(4) { animation-delay: 0.3s; }
+    .glow-text span:nth-child(5) { animation-delay: 0.4s; }
+    .glow-text span:nth-child(6) { animation-delay: 0.5s; }
+    .glow-text span:nth-child(7) { animation-delay: 0.6s; }
+    .glow-text span:nth-child(8) { animation-delay: 0.7s; }
+    .glow-text span:nth-child(9) { animation-delay: 0.8s; }
+    .glow-text span:nth-child(10) { animation-delay: 0.9s; }
+    .glow-text span:nth-child(11) { animation-delay: 1s; }
+
+    @keyframes glow {
+        from {
+            color: rgb(118, 243, 174);
+            text-shadow: 0 0 5px #ff0080, 0 0 10px #48ff00, 0 0 20px #f1e74d;
+        }
+        to {
+            color: #e96aa9;
+            text-shadow: 0 0 20px #ff4da6, 0 0 30px #ff1a75, 0 0 40px #ff0055;
+        }
+    }
+
+    /* Hover Effect */
+    .glow-text:hover span {
+        animation: glowHover 0.6s ease-in-out infinite alternate;
+        transform: scale(1.2) rotate(-5deg);
+        color: #00ffff;
+        text-shadow: 0 0 10px #00ffff, 0 0 20px #00cccc, 0 0 30px #009999;
+    }
+
+    @keyframes glowHover {
+        from {
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00cccc, 0 0 30px #009999;
+        }
+        to {
+            text-shadow: 0 0 20px #00ffff, 0 0 40px #00cccc, 0 0 60px #009999;
+        }
+    }
