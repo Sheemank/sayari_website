@@ -271,7 +271,7 @@ function renderImages(images) {
   // Update results info
   resultsInfo.textContent =
     images.length === shayariImages.length
-      ? "Showing all 15 Shayari images"
+      ? "Showing all 1500 Shayari images"
       : `Found ${images.length} images matching your search`;
 
   // Render images in columns
@@ -316,3 +316,5 @@ searchForm.addEventListener("submit", function (e) {
 
 // Initialize gallery with all images
 renderImages(shayariImages);
+// Update hero section text and subtitle
+//document.querySelector(".hero-section h1").textContent = "Welcome to Sayari World";
