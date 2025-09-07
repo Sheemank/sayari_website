@@ -19,11 +19,12 @@
             </a>
             <div class="nav-wrapper">
                 <nav class="nav">
-                    <a href="#"><i class="ri-heart-line"></i> Love</a>
-                    <a href="#"><i class="ri-emotion-sad-line"></i> Sad</a>
-                    <a href="#"><i class="ri-music-line"></i> Songs</a>
-                    <a href="#"><i class="ri-fire-line"></i> Motivation</a>
-                    <a href="#"><i class="ri-information-line"></i> About</a>
+                    <a href="#" class="filter-link" data-category="love"><i class="ri-heart-line"></i> Love</a>
+                    <a href="#" class="filter-link" data-category="sad"><i class="ri-emotion-sad-line"></i> Sad</a>
+                    <a href="#" class="filter-link" data-category="songs"><i class="ri-music-line"></i> Songs</a>
+                    <a href="#" class="filter-link" data-category="motivation"><i class="ri-fire-line"></i>
+                        Motivation</a>
+                    <a href="about.html"><i class="ri-information-line"></i> About</a>
                     <a href="login.html" id="login-btn"> Login/Signup</a>
                 </nav>
             </div>
@@ -37,13 +38,14 @@
 
     <main class="main-content">
         <section class="hero-section">
-<h1 class="animated-title glow-text" id="glow-title" tabindex="0">
-     <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
-    
-    <span>t</span><span>o</span>
-    <span>S</span><span>a</span><span>y</span><span>a</span><span>r</span><span>i</span>
-    <span>W</span><span>o</span><span>r</span><span>l</span><span>d</span>
-</h1>            <p id="typewriter-text">Express your deepest emotions through beautiful Shayari</p>
+            <h1 class="animated-title glow-text" id="glow-title" tabindex="0">
+                <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
+
+                <span>t</span><span>o</span>
+                <span>S</span><span>a</span><span>y</span><span>a</span><span>r</span><span>i</span>
+                <span>W</span><span>o</span><span>r</span><span>l</span><span>d</span>
+            </h1>
+            <p id="typewriter-text">Express your deepest emotions through beautiful Shayari</p>
 
             <div class="search-wrapper-hero">
                 <form class="search" id="search-form">
@@ -56,37 +58,30 @@
         <section class="featured-categories">
             <h2>Explore Categories</h2>
             <div class="category-grid">
-                <a href="#" class="category-card">
-                    <i class="ri-heart-3-fill"></i>
-                    <h3>Love Shayari</h3>
-                    <p>Dive into the ocean of romance.</p>
-                </a>
-                <a href="#" class="category-card">
-                    <i class="ri-heart-fill"></i>
-                    <h3>Sad Shayari</h3>
-                    <p>Find solace in words of sorrow.</p>
-                </a>
-                <a href="#" class="category-card">
-                    <i class="ri-rocket-fill"></i>
-                    <h3>Motivation</h3>
-                    <p>Ignite the fire within you.</p>
-                </a>
-                <a href="#" class="category-card">
-                    <i class="ri-heart-3-fill"></i>
-                    <h3>Text Songs</h3>
-                    <p>Dive into the ocean of romance songs.</p>
-                </a>
-                <a href="#" class="category-card">
-                    <i class="ri-heart-3-fill"></i>
-                    <h3>Text Songs</h3>
-                    <p>Dive into the ocean of romance songs.</p>
-                </a>
-                <a href="#" class="category-card">
-                    <i class="ri-heart-3-fill"></i>
-                    <h3>Text Songs</h3>
-                    <p>Dive into the ocean of romance songs.</p>
-                </a>
-            </div>
+  <a href="#" class="category-card filter-link" data-category="love">
+    <i class="ri-heart-3-fill"></i>
+    <h3>Love Shayari</h3>
+    <p>Dive into the ocean of romance.</p>
+  </a>
+
+  <a href="#" class="category-card filter-link" data-category="sad">
+    <i class="ri-heart-fill"></i>
+    <h3>Sad Shayari</h3>
+    <p>Find solace in words of sorrow.</p>
+  </a>
+
+  <a href="#" class="category-card filter-link" data-category="motivation">
+    <i class="ri-rocket-fill"></i>
+    <h3>Motivation</h3>
+    <p>Ignite the fire within you.</p>
+  </a>
+
+  <a href="#" class="category-card filter-link" data-category="songs" >
+    <i class="ri-heart-3-fill"></i>
+    <h3>Text Songs</h3>
+    <p>Dive into the ocean of romance songs.</p>
+  </a>
+</div>
         </section>
 
         <div class="search-results-info" id="search-results">Showing all 1100 Shayari images</div>
